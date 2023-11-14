@@ -12,7 +12,7 @@
 
 body {
     background: #fff;
-    font-family: 'poppins', 'Open Sans', sans-serif;
+    font-family: 'Nunito sans', 'Open sans', Arial, sans-serif;
 }
 
 .container {
@@ -104,10 +104,22 @@ body {
     margin-left: 10px;
 }
 
+.single-product .details {
+    margin-top: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
- 
-
     .navbar {
         display: none;
         flex-direction: column;
