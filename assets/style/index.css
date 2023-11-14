@@ -1,20 +1,27 @@
 @charset "utf-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
-    color: #ededed;
-    background: #fff;
+  font-family: "Nunito sans", "Open sans", Arial, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
 }
 
 /* -------- HEADER -------- */
 .header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -54,10 +61,37 @@ body {
 }
 
 /* -------- MAIN -------- */
-.categories {
-    
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+/* .categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+} */
+
+.col-1 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col-1 img {
+    width: 100%;
+}
 
 @media screen and (max-width: 768px) {
     .navbar {
