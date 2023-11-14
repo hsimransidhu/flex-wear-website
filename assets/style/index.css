@@ -12,6 +12,7 @@ body {
     background: #fff;
 }
 
+/* -------- HEADER -------- */
 .header {
     position: fixed;
     top: 0;
@@ -52,10 +53,13 @@ body {
     display: none;
 }
 
+/* -------- MAIN -------- */
+.categories {
+    
+}
+
 
 @media screen and (max-width: 768px) {
- 
-
     .navbar {
         display: none;
         flex-direction: column;
