@@ -70,8 +70,32 @@ body {
     margin-top: 80px;
 }
 
+.single-product .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .single-product .col-2 {
     padding: 20px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 .rating {
+    color: #ff523b;
+}
+
+.rating span {
+    font-weight: 600;
+    color: #252525;
 }
 
 .single-product h4 {
@@ -118,6 +142,16 @@ body {
     cursor: pointer;
 }
 
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -151,6 +185,7 @@ body {
     .menu-icon:hover {
         color: #0ef;
     }
-
 }
+
+
 
