@@ -137,11 +137,21 @@ body {
     z-index: 1;
 }
 
+.logintext , .username , .password {
+    color: #0c0c0c;
+  
+}
+
+.username , .password {
+     text-align: left;
+}
+
 .modal-content {
     background: #fff;
     border-radius: 8px;
     padding: 20px;
     max-width: 800px;
+    width: 300px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -152,6 +162,7 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    color: #0c0c0c;
 }
 
 /* Additional styles for the form */
