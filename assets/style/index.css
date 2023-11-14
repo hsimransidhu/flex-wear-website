@@ -1,19 +1,27 @@
 @charset "utf-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
-    color: #ededed;
-    background: #fff;
+  font-family: "Nunito sans", "Open sans", Arial, sans-serif;
+  letter-spacing: 0.3px;
 }
 
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+/* -------- HEADER -------- */
 .header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -52,7 +60,119 @@ body {
     display: none;
 }
 
+/* -------- MAIN -------- */
 
+  
+/* -- Featured Products -- */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-1:hover {
+    transform: translateY(-5px);
+}
+
+.col-1 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 60px auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-1 p {
+    font-size: 14px;
+}
+
+.rating i {
+    color: #ff523b;
+}
+
+.col-2 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+/* -- Testimonials -- */
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-2 {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-2 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-2:hover {
+    transform: translateY(-10px);
+}
+
+.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-2 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* -------- RESPONSIVE -------- */
+ 
 /*--Footer--*/
 .footer {
     background-color: #bfbfbf;
@@ -208,10 +328,8 @@ body {
         width: 100%;
     }
 }
-
-@media screen and (max-width: 768px) {
  
-
+@media screen and (max-width: 768px) {
     .navbar {
         display: none;
         flex-direction: column;
