@@ -4,12 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', 'Open Sans', sans-serif;
+    outline: none;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 body {
-    color: #ededed;
     background: #fff;
+    font-family: 'Nunito sans', 'Open sans', Arial, sans-serif;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
 }
 
 .header {
@@ -52,10 +60,100 @@ body {
     display: none;
 }
 
+/* Single product */
+.single-product .col-2 img {
+    width: 100%;
+    padding: 0;
+}
+
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-product .col-2 {
+    padding: 20px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 .rating {
+    color: #ff523b;
+}
+
+.rating span {
+    font-weight: 600;
+    color: #252525;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+/* input:focus {
+    outline: none;
+} */
+
+.single-product .fa {
+    color: #ff523b;
+    margin-left: 10px;
+}
+
+.single-product .details {
+    margin-top: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 768px) {
- 
-
     .navbar {
         display: none;
         flex-direction: column;
@@ -87,5 +185,7 @@ body {
     .menu-icon:hover {
         color: #0ef;
     }
-
 }
+
+
+
