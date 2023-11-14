@@ -130,8 +130,32 @@ h4 {
 }
 
 /* -- Testimonials -- */
+.testimonial {
+    padding-top: 100px;
+}
 
+.testimonial .col-2 {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
 
+.testimonial .col-2 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-2:hover {
+    transform: translateY(-10px);
+}
+
+/* .fa-quote-left {
+
+} */
 
 /* -------- RESPONSIVE -------- */
 @media screen and (max-width: 768px) {
