@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Flex Wear</title>
-    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="assets/style/index.css" />
     <script src="assets/script/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +12,75 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
     />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="#" class="logo"></a>
-        <div class="menu-icon">&#9776;</div>
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
+      <a href="#" class="logo"></a>
+      <div class="menu-icon">&#9776;</div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
-    </body>
+    <main>
+      <div class="container">
+        <div class="featured-products">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./assets/images/product-1.jpg">
+                    <h4>Red Printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-1">
+                    <img src="./assets/images/product-2.jpg">
+                    <h4>HRX Sports Shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+                <div class="col-1">
+                    <img src="./assets/images/product-3.jpg">
+                    <h4>HRX Gray Trackpants</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$45.00</p>
+                </div>
+                <div class="col-1">
+                    <img src="./assets/images/product-4.jpg">
+                    <h4>Blue-printed T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
