@@ -93,7 +93,7 @@ body {
 .hero-btn {
     text-decoration: none;
     color: #fff;
-    background: #000;
+    background: #0e9aff;
     padding: 10px 30px;
     border-radius: 30px;
     margin-top: 10px;
@@ -103,7 +103,7 @@ body {
 }
 
 .hero-btn:hover {
-    background: #222;
+    background: #0086e6;
 }
 
 /* -- Featured Products -- */
