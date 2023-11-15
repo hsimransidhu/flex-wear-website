@@ -87,6 +87,7 @@ body {
     margin: 20px 0;
     max-width: 700px;
     margin: 0 auto;
+    color: #fff;
 }
 
 .hero-btn {
@@ -119,6 +120,7 @@ body {
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
+  margin-top: 30px;
 }
 
 .col-1:hover {
@@ -135,11 +137,13 @@ body {
   position: relative;
   line-height: 60px;
   color: #555;
+  font-size: 34px;
+  margin-bottom: 10px;
 }
 
 .title::after {
   content: "";
-  background: #ff523b;
+  background: #006fbf;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -159,7 +163,7 @@ h4 {
 }
 
 .rating i {
-  color: #ff523b;
+  color: #ffa500;
 }
 
 .col-2 {
@@ -206,14 +210,14 @@ p {
 }
 
 .col-3 h3 {
-    color: #ff523b;
+    color: #006fbf;
     font-weight: 500;
     font-size: 22px;
 }
 
 .btn {
   display: block;
-  background: #ff523b;
+  background: #006fbf;
   color: #fff;
   height: 35px;
   padding: 5px 30px;
@@ -223,12 +227,12 @@ p {
 }
 
 .btn:hover {
-  background-color: #eb4f3a;
+  background-color: #0064ab;
 }
 
 /* -- Testimonials -- */
 .testimonial {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 .testimonial .col-2 {
@@ -238,7 +242,8 @@ p {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
-  height: 350px;
+  height: 370px;
+  margin-top: 40px;
 }
 
 .testimonial .col-2 img {
@@ -253,7 +258,7 @@ p {
 
 .fa-quote-left {
   font-size: 34px;
-  color: #ff523b;
+  color: #006fbf;
 }
 
 .col-2 p {
