@@ -67,149 +67,219 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #857e7e;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
-         
-    }
+/* -------- MAIN -------- */
 
-    nav ul li {
-        display: block;
-        margin-right: 40px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
-
-    nav ul li a {
-        color: #fff;
-      
-    }
-     
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        width: 30px;
-    }
-} 
-
-@media(max-width: 800px) {
-  #loginhead , #contact {
-        cursor: pointer;
-    }
+/* -- Hero Banner -- */
+.hero-image {
+    background: #000 url(../images/hero-banner-sports.jpg) center center / cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #0e9aff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.hero-btn:hover {
+    background: #0086e6;
+}
+
 /* -- Featured Products -- */
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .col-1 {
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+  margin-top: 30px;
 }
 
 .col-1:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .col-1 img {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    text-align: center;
-    margin: 60px auto;
-    position: relative;
-    line-height: 60px;
-    color: #555;
+  text-align: center;
+  margin: 60px auto;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  font-size: 34px;
+  margin-bottom: 10px;
 }
 
 .title::after {
-    content: '';
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%)
+  content: "";
+  background: #006fbf;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h4 {
-    color: #555;
-    font-weight: normal;
+  color: #555;
+  font-weight: 500;
 }
 
 .col-1 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .rating i {
-    color: #ff523b;
+  color: #ffa500;
 }
 
 .col-2 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
 }
 
 .col-2 img {
-    width: 100%;
+  width: 100%;
+}
+
+/* -- Hot Deal -- */
+.offer {
+  display: flex;
+  background: radial-gradient(#fff, #d3ecff);
+  margin-top: 60px;
+  padding: 30px 0;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.offer-img {
+  max-width: 100%;
+  height: auto; /* This ensures the image aspect ratio is maintained */
+}
+
+.col-3 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+}
+
+.col-3 h3 {
+    color: #006fbf;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.btn {
+  display: block;
+  background: #006fbf;
+  color: #fff;
+  height: 35px;
+  padding: 5px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0064ab;
 }
 
 /* -- Testimonials -- */
 .testimonial {
-    padding-top: 100px;
+  padding-top: 40px;
 }
 
 .testimonial .col-2 {
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  height: 370px;
+  margin-top: 40px;
+  background-color: #fafafa;
 }
 
 .testimonial .col-2 img {
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
 }
 
 .testimonial .col-2:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .fa-quote-left {
-    font-size: 34px;
-    color: #ff523b;
+  font-size: 34px;
+  color: #006fbf;
 }
 
 .col-2 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
 }
 
-.testimonial .col-3 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
+.testimonial .col-2 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
 }
 
 /* -------- RESPONSIVE -------- */
