@@ -23,15 +23,46 @@
 
   <body>
     <header class="header">
-      <a href="#" class="logo"></a>
-      <div class="menu-icon">&#9776;</div>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
+        <a href="#" class="logo"></a>
+        <div class="menu-icon">&#9776;</div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#loginModal" id="login">Login</a>
+        </nav>
     </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 class="logintext">Login</h2>
+            <form>
+                <label for="username" class="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password" class="password">Password:</label>
+            
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">&#x1F441;</span>
+              
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>
+ 
+ 
     <main>
+      <!-- -------- HERO BANNER ---------- -->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Flex Your Style, Elevate Your Game</h1>
+          <p>Discover Performance and Comfort with FlexWear Sports Apparel</p>
+          <!-- <button class="hero btn">Explore Now &#8594;</button> -->
+          <a href="#" class="hero-btn">Explore Now &#8594;</a>
+        </div>
+      </div>
+
       <!-- -------- FEATURED PRODUCTS ---------- -->
       <div class="container">
         <h2 class="title">Featured Products</h2>
@@ -174,5 +205,46 @@
         </div>
       </div>
     </main>
-  </body>
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our products</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online store</h4>
+                    <ul>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
 </html>
+ 
