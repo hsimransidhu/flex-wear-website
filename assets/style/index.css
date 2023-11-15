@@ -62,6 +62,11 @@ body {
 
 /* -------- MAIN -------- */
 
+/* -- Hero Banner -- */
+.hero-image {
+    background: #000 url(../images/);
+}
+
 /* -- Featured Products -- */
 .row {
     display: flex;
