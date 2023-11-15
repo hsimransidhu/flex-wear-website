@@ -65,7 +65,6 @@ body {
     max-width: 1080px;
     margin: auto;
     padding: 0 25px;
-
 }
 
 .single-product .column img {
@@ -77,7 +76,7 @@ body {
     margin-top: 80px;
 }
 
-.row {
+.row { 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -149,7 +148,6 @@ body {
     gap: 20px;
 }
 
-
 /* input:focus {
     outline: none;
 } */
@@ -190,6 +188,10 @@ body {
     gap: 20px;
 }
 
+.buttons i {
+    margin-right: 10px;
+}
+
 .cart {
     background-color: #ff523b;
     color: #fff;
@@ -205,6 +207,31 @@ body {
     background: #f1f1f1;
     width: 100%;
     height: auto;
+    margin-top: 20px;
+}
+
+.h2 {
+    letter-spacing: 0.3px;
+}
+
+.ideas {
+    text-align: center;
+    margin: 30px auto 20px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.ideas::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .style-background .column {
@@ -216,21 +243,22 @@ body {
 }
 
 .style-background .column img {
-    width: 60%;
-    height: 40%;
+    width: 70%;
+    height: 60%;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .style-background .column:first-child img {
-    height: 100%;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
-.style-background .column:not(:first-child) img {
+/* .style-background .column:not(:first-child) img {
     height: 25%;
     width: 50%;
-    display: grid;
-    place-items: center;
-}
+    margin-top: 20px;
+    cursor: pointer;
+} */
 
 /* Related Products */
 
@@ -269,6 +297,7 @@ body {
 h4 {
     color: #555;
     font-weight: 500;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
