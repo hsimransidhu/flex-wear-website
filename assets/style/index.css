@@ -21,241 +21,233 @@ body {
 
 /* -------- HEADER -------- */
 .header {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: #051129;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051129;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .logo {
-    position: relative;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
 }
 
 .navbar a {
-    display: inline-block;
-    font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-   
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
 }
 
 .navbar a:hover {
-    color: #0ef;
+  color: #0ef;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
 /* -------- MAIN -------- */
 
 /* -- Featured Products -- */
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .col-1 {
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
 }
 
 .col-1:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .col-1 img {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    text-align: center;
-    margin: 60px auto;
-    position: relative;
-    line-height: 60px;
-    color: #555;
+  text-align: center;
+  margin: 60px auto;
+  position: relative;
+  line-height: 60px;
+  color: #555;
 }
 
 .title::after {
-    content: '';
-    background: #ff523b;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%)
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h4 {
-    color: #555;
-    font-weight: 500;
+  color: #555;
+  font-weight: 500;
 }
 
 .col-1 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .rating i {
-    color: #ff523b;
+  color: #ff523b;
 }
 
 .col-2 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
 }
 
 .col-2 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* -- Hot Deal -- */
-.col-3 {
-    flex-basis: 50%;
-    min-width: 300px;
-    padding: 20px;
-}
-
-/* .col-3 img {
-    max-width: 100%;
-    padding: 50px 0;
-} */
-
-.col-3 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-
 .offer {
+    display: flex;
     background: radial-gradient(#fff, #ffd6d6);
     margin-top: 60px;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
-.col-3 .offer-img {
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* height: 250px; */
-    /* width: 100%; */
-    /* width: 250px; */
-    padding: 50px;
-    width: 100%;
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.offer-img {
+  max-width: 100%;
+  height: auto; /* This ensures the image aspect ratio is maintained */
+}
+
+.col-3 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
 }
 
 small {
-    color: #555;
+  color: #555;
 }
 
 .btn {
-    display: block;
-    background: #ff523b;
-    color: #fff;
-    height: 35px;
-    padding: 5px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: color 0.3s ease-in-out;
+  display: block;
+  background: #ff523b;
+  color: #fff;
+  height: 35px;
+  padding: 5px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: color 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #eb4f3a;
+  background-color: #eb4f3a;
 }
 
 /* -- Testimonials -- */
 .testimonial {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .testimonial .col-2 {
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-    height: 350px;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  height: 350px;
 }
 
 .testimonial .col-2 img {
-    width: 50px;
-    margin-top: 20px;
-    border-radius: 50%;
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
 }
 
 .testimonial .col-2:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .fa-quote-left {
-    font-size: 34px;
-    color: #ff523b;
+  font-size: 34px;
+  color: #ff523b;
 }
 
 .col-2 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
 }
 
 .testimonial .col-2 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
 }
 
 /* -------- RESPONSIVE -------- */
 @media screen and (max-width: 768px) {
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #051129;
-    }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #051129;
+  }
 
-    .navbar a {
-        margin: 10px 0;
-        opacity: 1;
-        animation: none;
-    }
+  .navbar a {
+    margin: 10px 0;
+    opacity: 1;
+    animation: none;
+  }
 
-    .navbar.active {
-        display: flex;
-    }
+  .navbar.active {
+    display: flex;
+  }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: #fff;
-    }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+  }
 
-    .menu-icon:hover {
-        color: #0ef;
-    }
-
+  .menu-icon:hover {
+    color: #0ef;
+  }
 }
