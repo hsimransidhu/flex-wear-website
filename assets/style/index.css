@@ -195,7 +195,7 @@ h4 {
 
 .offer-img {
   max-width: 100%;
-  height: auto; /* This ensures the image aspect ratio is maintained */
+  height: auto;
 }
 
 .col-3 h1 {
@@ -273,8 +273,6 @@ p {
   color: #555;
   font-size: 16px;
 }
-
-/* -------- RESPONSIVE -------- */
  
 /*--Footer--*/
 .footer {
@@ -418,7 +416,41 @@ p {
     background-color: #45a049;
 }
 
-/*responsive*/
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+    .offer {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .offer .row {
+        flex-direction: column;
+    }
+  
+    .col-3 {
+      text-align: center;
+    }
+  
+    .col-3 h1 {
+      font-size: 34px;
+      line-height: 50px;
+      margin: 20px 0;
+    }
+
+    .col-3 h3 {
+        font-size: 19px;
+    }
+
+    .col-3 p {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    
+    .btn {
+      margin: 20px auto;
+    }
+  }
+
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
