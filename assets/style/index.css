@@ -129,6 +129,37 @@ h4 {
     width: 100%;
 }
 
+/* -- Hot Deal -- */
+.col-3 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+/* .col-3 img {
+    min-width: 100%;
+    padding: 50px 0;
+} */
+
+.col-3 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
 /* -- Testimonials -- */
 .testimonial {
     padding-top: 100px;
