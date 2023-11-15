@@ -96,7 +96,7 @@ body {
 }
 
 .column .rating {
-    color: #ff523b;
+    color: #ffa500;
 }
 
 .rating span {
@@ -117,6 +117,7 @@ body {
 
 .old-price span {
     text-decoration: line-through;
+    color: #eb0000 ;
 }
 
 .stock {
@@ -138,7 +139,7 @@ body {
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid #ff523b;
+    border: 1px solid #006fbf ;
 }
 
 .options {
@@ -148,12 +149,9 @@ body {
     gap: 20px;
 }
 
-/* input:focus {
-    outline: none;
-} */
 
 .fa {
-    color: #ff523b;
+    color: #006fbf;
     margin-left: 10px;
 }
 
@@ -177,10 +175,7 @@ body {
     margin: 20px 0;
     border-radius: 30px;
     text-decoration: none;
-}
-
-.btn:hover {
-    background: #ffb84f;
+    transition: color 0.3s ease-in-out;
 }
 
 .buttons {
@@ -193,13 +188,22 @@ body {
 }
 
 .cart {
-    background-color: #ff523b;
+    background-color: #ff641b;
     color: #fff;
 }
 
+.cart:hover {
+    background-color: #ec4f04;
+}
+
 .buy {
+    /* background-color: #ff9f00; */
     background-color: #ffd814;
     color: #000;
+}
+
+.buy:hover {
+    background-color: #ffdf3b;
 }
 
 /*----------- Styling Ideas --------------*/
@@ -220,11 +224,14 @@ body {
     position: relative;
     line-height: 60px;
     color: #555;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .heading::after {
     content: '';
-    background: #ff523b;
+    background: #006fbf;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -253,12 +260,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* .style-background .column:not(:first-child) img {
-    height: 25%;
-    width: 50%;
-    margin-top: 20px;
-    cursor: pointer;
-} */
 
 /* Related Products */
 
@@ -291,7 +292,7 @@ body {
 }
 
 .related-product .fa-solid, .fa-regular {
-    color: #ff523b;
+    color: #ffa500;
 }
 
 h4 {
@@ -327,7 +328,7 @@ h4 {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #006fbf;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
