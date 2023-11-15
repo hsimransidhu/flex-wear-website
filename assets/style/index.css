@@ -64,7 +64,11 @@ body {
 
 /* -- Hero Banner -- */
 .hero-image {
-    background: #000 url(../images/);
+    background: #000 url(../images/hero-banner-sports.jpg) center center / cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -- Featured Products -- */
