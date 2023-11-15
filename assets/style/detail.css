@@ -60,7 +60,14 @@ body {
     display: none;
 }
 
-/* Single product */
+/*-------- Single product -----------*/
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+
+}
+
 .single-product .column img {
     width: 100%;
     padding: 0;
@@ -99,25 +106,49 @@ body {
 }
 
 .single-product h4 {
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
     font-size: 22px;
     font-weight: 700;
+}
+
+.old-price {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.old-price span {
+    text-decoration: line-through;
+}
+
+.stock {
+    color: #2a8c2a;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .single-product select {
     display: block;
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .single-product input {
     width: 50px;
-    height: 40px;
+    height: 30px;
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
     border: 1px solid #ff523b;
 }
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
 
 /* input:focus {
     outline: none;
@@ -144,19 +175,32 @@ body {
 
 .btn {
     display: inline-block;
-    background: #ff523b;
-    color: #fff;
     padding: 8px 30px;
-    margin: 30px 0;
+    margin: 20px 0;
     border-radius: 30px;
     text-decoration: none;
 }
 
 .btn:hover {
-    background: #563434;
+    background: #ffb84f;
 }
 
-/* Styling Ideas */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cart {
+    background-color: #ff523b;
+    color: #fff;
+}
+
+.buy {
+    background-color: #ffd814;
+    color: #000;
+}
+
+/*----------- Styling Ideas --------------*/
 .style-background {
     background: #f1f1f1;
     width: 100%;
@@ -184,6 +228,8 @@ body {
 .style-background .column:not(:first-child) img {
     height: 25%;
     width: 50%;
+    display: grid;
+    place-items: center;
 }
 
 /* Related Products */
