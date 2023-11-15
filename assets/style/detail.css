@@ -214,7 +214,7 @@ body {
     letter-spacing: 0.3px;
 }
 
-.ideas {
+.heading {
     text-align: center;
     margin: 30px auto 20px;
     position: relative;
@@ -222,7 +222,7 @@ body {
     color: #555;
 }
 
-.ideas::after {
+.heading::after {
     content: '';
     background: #ff523b;
     width: 80px;
