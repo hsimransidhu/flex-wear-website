@@ -4,18 +4,20 @@ function select(selector, parent = document) {
     return parent.querySelectorAll(selector);
 }
 
-let ProductImg = document.getElementById("product-img");
-let SmallImg = select(".small-img");
+let productImg = document.getElementById("product-img");
+let smallImg = select(".small-img");
 
-SmallImg[0].onclick = function() {
-    ProductImg.src = SmallImg[0].src;
+smallImg[0].onclick = function() {
+    productImg.src = smallImg[0].src;
 }
-SmallImg[1].onclick = function() {
-    ProductImg.src = SmallImg[1].src;
+smallImg[1].onclick = function() {
+    productImg.src = smallImg[1].src;
 }
-SmallImg[2].onclick = function() {
-    ProductImg.src = SmallImg[2].src;
+smallImg[2].onclick = function() {
+    productImg.src = smallImg[2].src;
 }
-SmallImg[3].onclick = function() {
-    ProductImg.src = SmallImg[3].src;
+smallImg[3].onclick = function() {
+    productImg.src = smallImg[3].src;
 }
+
+
