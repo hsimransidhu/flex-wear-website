@@ -179,7 +179,7 @@ h4 {
 /* -- Hot Deal -- */
 .offer {
   display: flex;
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, #d3ecff);
   margin-top: 60px;
   padding: 30px 0;
 }
@@ -244,6 +244,7 @@ p {
   transition: transform 0.5s;
   height: 370px;
   margin-top: 40px;
+  background-color: #fafafa;
 }
 
 .testimonial .col-2 img {
