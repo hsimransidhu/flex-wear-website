@@ -298,6 +298,11 @@ p {
 .footercol {
     width: 25%;
     padding: 0 15px;
+ 
+}
+
+.rowf {
+    display: flex;
 }
 
 .footercol h4 {
@@ -335,6 +340,9 @@ p {
     display: block;
     transition: all 0.3s ease;
 }
+.footercol ul li{
+    list-style: none;
+}
 
 .footercol ul li a:hover {
     color: #161515;
@@ -365,6 +373,10 @@ p {
     .footercol {
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    .rowf {
+        display: block;
     }
 }
 
