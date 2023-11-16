@@ -37,9 +37,7 @@ a {
     color: #fff1f1;
 }
 
-p {
-    color: #ffffff;
-}
+ 
 
 .container {
     max-width: 1300px;
@@ -530,7 +528,7 @@ h4 {
  
 
 @media screen and (max-width: 768px) {
-    .navbar {
+    /* .navbar {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -592,7 +590,7 @@ h4 {
 
     .menu-icon:hover {
         color: #0ef;
-    }
+    } */
 
     .hero-text p {
         max-width: 80%;

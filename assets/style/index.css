@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 /*---HEADER---*/
-.logo img {
-    width: 125px;
-}
+ 
+ 
 
 .navbar {
     display: flex;
@@ -34,7 +33,7 @@ nav ul li a:hover {
 
 a {
     text-decoration: none;
-    color: #fff1f1;
+    color: #000000;
 }
 
 p {
@@ -49,7 +48,8 @@ p {
 }
 
 header {
-    background-color: #006fbf;
+    background-color:transparent;
+    
 }
 
 .menu-icon {
