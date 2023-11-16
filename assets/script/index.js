@@ -1,4 +1,8 @@
- let MenuItems = document.getElementById("MenuItems");
+'use strict';
+let MenuItems = document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0px";
+
+let MenuItems = document.getElementById("MenuItems");
 MenuItems.style.maxHeight = "0px";
 
 function menutoggle() {
@@ -27,3 +31,5 @@ function closeModal() {
 function login() {
     document.getElementById('loginModal').style.display = 'none';
 }
+
+ 
