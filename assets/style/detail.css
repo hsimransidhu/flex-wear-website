@@ -1,14 +1,22 @@
 @charset "utf-8";
 
- /*---HEADER---*/
+/*---HEADER---*/
 .logo img {
-    width: 125px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    float: right;
+    margin-left: 20px;
+    font-weight: 600;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav {
@@ -29,15 +37,13 @@ nav ul li {
 }
 
 nav ul li a:hover {
- color: #0c0c0c;
+    color: rgb(60, 34, 229);
 }
 
 a {
     text-decoration: none;
-    color: #fff1f1;
+    color: #000;
 }
-
- 
 
 .container {
     max-width: 1300px;
@@ -47,7 +53,7 @@ a {
 }
 
 header {
-    background-color: #006fbf;
+    background: radial-gradient(#fff, #d3ecff);
 }
 
 .menu-icon {
@@ -56,6 +62,7 @@ header {
     display: none;
 }
 
+/*--Login--*/
 
 .modal {
     display: none;
@@ -68,20 +75,20 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 1;
-  }
-  
-  .logintext,
-  .username,
-  .password {
+}
+
+.logintext,
+.username,
+.password {
     color: #0c0c0c;
-  }
-  
-  .username,
-  .password {
+}
+
+.username,
+.password {
     text-align: left;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background: #fff;
     border-radius: 8px;
     padding: 20px;
@@ -90,50 +97,50 @@ header {
     margin: 0 auto;
     position: relative;
     text-align: center;
-     
-  }
-  
-  .close-btn {
+
+}
+
+.close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
     color: #0c0c0c;
-  }
-  
-   
+}
+
+
 /* Additional styles for the form */
 .modal-content form {
     display: flex;
     flex-direction: column;
 }
-  
+
 .modal-content label {
     margin-bottom: 8px;
 }
-  
-  .modal-content input {
+
+.modal-content input {
     padding: 8px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .modal-content button {
+}
+
+.modal-content button {
     background-color: #006fbf;
     color: #fff;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .modal-content button:hover {
-    background-color:#006fbf;
-  }
-  
+}
+
+.modal-content button:hover {
+    background-color: #006fbf;
+}
+
 /*-------- Single product -----------*/
-.small-container{
+.small-container {
     max-width: 1080px;
     margin: auto;
     padding: 0 25px;
@@ -152,7 +159,7 @@ header {
     color: #000;
 }
 
-.row { 
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -193,7 +200,7 @@ header {
 
 .old-price span {
     text-decoration: line-through;
-    color: #eb0000 ;
+    color: #eb0000;
 }
 
 .stock {
@@ -215,7 +222,7 @@ header {
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid #006fbf ;
+    border: 1px solid #006fbf;
 }
 
 .options {
@@ -224,7 +231,6 @@ header {
     align-items: center;
     gap: 20px;
 }
-
 
 .fa {
     color: #006fbf;
@@ -340,8 +346,6 @@ header {
     margin-bottom: 20px;
 }
 
-
- 
 /* Related Products */
 
 .row-2 {
@@ -372,7 +376,8 @@ header {
     width: 100%;
 }
 
-.related-product .fa-solid, .fa-regular {
+.related-product .fa-solid,
+.fa-regular {
     color: #ffa500;
 }
 
@@ -382,7 +387,7 @@ h4 {
     font-size: 16px;
 }
 
- 
+
 /*--Footer--*/
 .footer {
     background-color: #bfbfbf;
@@ -393,7 +398,7 @@ h4 {
 .footercol {
     width: 25%;
     padding: 0 15px;
- 
+
 }
 
 .rowf {
@@ -435,7 +440,8 @@ h4 {
     display: block;
     transition: all 0.3s ease;
 }
-.footercol ul li{
+
+.footercol ul li {
     list-style: none;
 }
 
@@ -481,8 +487,6 @@ h4 {
     }
 }
 
- 
- 
 /* Related Products */
 
 .row-2 {
@@ -513,9 +517,11 @@ h4 {
     width: 100%;
 }
 
-.related-product .fa-solid, .fa-regular {
+.related-product .fa-solid,
+.fa-regular {
     color: #ffa500;
 }
+
 /* ----------------------------- */
 /*     Responsiveness            */
 /* ----------------------------- */
@@ -525,72 +531,9 @@ h4 {
     color: #555;
     font-weight: 500;
 }
- 
+
 
 @media screen and (max-width: 768px) {
-    /* .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #051129;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-        opacity: 1;
-        animation: none;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: #fff;
-    }
-
-    .menu-icon:hover {
-        color: #0ef;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #051129;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-        opacity: 1;
-        animation: none;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: #fff;
-    }
-
-    .menu-icon:hover {
-        color: #0ef;
-    } */
 
     .hero-text p {
         max-width: 80%;
@@ -598,35 +541,41 @@ h4 {
 }
 
 /* responsiveness for images*/
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) {
     .row {
         text-align: center;
     }
+
     .column {
         flex-basis: 100%;
     }
+
     .heading {
         font-size: 25px;
     }
-    .single-product .row{
+
+    .single-product .row {
         text-align: left;
     }
-    .single-product .column{
+
+    .single-product .column {
         padding: 20px 0;
     }
-    .single-product h1{
+
+    .single-product h1 {
         font-size: 26px;
         line-height: 32px;
     }
 }
 
-@media only  screen and (max-width: 800px) {
-  
+@media only screen and (max-width: 800px) {
+
     nav ul {
         position: absolute;
         top: 70px;
         left: 0;
-        background: #333;
+        background: #8a8a8a;
+        opacity: 0.8;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -639,8 +588,12 @@ h4 {
         margin-bottom: 10px;
     }
 
-    nav ul li a{
-        color: #fff;
+    nav ul li a {
+        color: #000000;
+    }
+
+    nav ul li a:hover {
+        color: #006fbf;
     }
 
     .menu-icon {
@@ -648,4 +601,3 @@ h4 {
         cursor: pointer;
     }
 }
-
