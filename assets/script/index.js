@@ -1,7 +1,5 @@
 'use strict';
-let MenuItems = document.getElementById("MenuItems");
-MenuItems.style.maxHeight = "0px";
-
+ 
 let MenuItems = document.getElementById("MenuItems");
 MenuItems.style.maxHeight = "0px";
 
