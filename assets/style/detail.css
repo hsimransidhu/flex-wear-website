@@ -241,6 +241,10 @@ body {
     transform: translateX(-50%)
 }
 
+.style-background .ideas {
+    padding-left: 10px;
+}
+
 .style-background .column {
     flex-basis: 25%;
     padding: 10px;
@@ -262,6 +266,46 @@ body {
 
 
  
+/* Related Products */
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 10px 15px 10px;
+}
+
+.row-2 p {
+    color: #555;
+}
+
+.col-1 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-1:hover {
+    transform: translateY(-5px);
+}
+
+.col-1 img {
+    width: 100%;
+}
+
+.related-product .fa-solid, .fa-regular {
+    color: #ffa500;
+}
+
+h4 {
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+}
+
 /*--Footer--*/
 .footer {
     background-color: #bfbfbf;
@@ -367,6 +411,10 @@ body {
 .related-product .fa-solid, .fa-regular {
     color: #ffa500;
 }
+/* ----------------------------- */
+/*     Responsiveness            */
+/* ----------------------------- */
+
 
 h4 {
     color: #555;
@@ -441,6 +489,29 @@ h4 {
 
     .hero-text p {
         max-width: 80%;
+    }
+}
+
+/* responsiveness for images*/
+@media screen and (max-width: 600px) {  
+    .row {
+        text-align: center;
+    }
+    .column {
+        flex-basis: 100%;
+    }
+    .heading {
+        font-size: 25px;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .column{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
     }
 }
 
