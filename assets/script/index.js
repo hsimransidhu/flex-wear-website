@@ -10,33 +10,33 @@ function select(selector, parent = document) {
 }
 
 function getElement(selector, parent = document) {
-    return parent.getElementById(selector);
-  }
+  return parent.getElementById(selector);
+}
 
 // Selections
-const productDetail = getElement('product-1');
+const productDetail = getElement("product-1");
 let MenuItems = getElement("MenuItems");
 
 // Main Code
 MenuItems.style.maxHeight = "0px";
 
 function menutoggle() {
-    if (MenuItems.style.maxHeight == "0px") {
-        MenuItems.style.maxHeight = "200px";
-    } else {
-        MenuItems.style.maxHeight = "0px";
-    }
+  if (MenuItems.style.maxHeight == "0px") {
+    MenuItems.style.maxHeight = "200px";
+  } else {
+    MenuItems.style.maxHeight = "0px";
+  }
 }
 
 function openModal() {
-    if (window.innerWidth <= 600) {
-        menutoggle();
-        // Hide the menu when opening the modal on smaller screens
-        MenuItems.style.maxHeight = "0px";
-    
-        getElement('loginModal').style.display = 'flex';
-    }
-    getElement('loginModal').style.display = 'flex';
+  if (window.innerWidth <= 600) {
+    menutoggle();
+    // Hide the menu when opening the modal on smaller screens
+    MenuItems.style.maxHeight = "0px";
+
+    getElement("loginModal").style.display = "flex";
+  }
+  getElement("loginModal").style.display = "flex";
 }
 
 function closeModal() {
@@ -44,10 +44,10 @@ function closeModal() {
 }
 
 function login() {
-    getElement('loginModal').style.display = 'none';
+  getElement("loginModal").style.display = "none";
 }
 
 // Open detail page
-onEvent('click', productDetail, () => {
-    window.location.href = './detail.html';
-})
+onEvent("click", productDetail, () => {
+  window.location.href = "./detail.html";
+});
