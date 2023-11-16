@@ -1,20 +1,5 @@
 @charset "utf-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border-style: none;
-    vertical-align: baseline;
-    box-sizing: border-box;
-}
-
- 
-body {
-    font-family: "Nunito sans", "Open sans", Arial, sans-serif;
-    letter-spacing: 0.3px;
-}
-
 /*---HEADER---*/
 .logo img {
     width: 125px;
@@ -549,6 +534,10 @@ p {
     .col-3 {
         flex-basis: 100%;
     }
+
+    .col-2 {
+      flex-basis: calc(100% - 60px);
+  }
 }
 
 
