@@ -31,14 +31,223 @@
             <nav>
                 <ul id="MenuItems">
                     <li><a href="#" onclick="openModal()" id="loginhead">Login</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#follow" id="contact">Contact</a></li>
                     <li><a href="#products">Products</a></li>
+                
                 </ul>
             </nav>
             <img src="assets/images/menu.png" alt="" srcset="" class="menu-icon" onclick="menutoggle()">
     </div>
 </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 class="logintext">Login</h2>
+            <form>
+                <label for="username" class="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password" class="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                <button type="button" onclick="login()" id="loginbtn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+      <!-- -------- HERO BANNER ---------- -->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Flex Your Style, Elevate Your Game</h1>
+          <p>Discover Performance and Comfort with FlexWear Sports Apparel</p>
+          <!-- <button class="hero btn">Explore Now &#8594;</button> -->
+          <a href="#" class="hero-btn">Explore Now &#8594;</a>
+        </div>
+      </div>
+
+      <!-- -------- FEATURED PRODUCTS ---------- -->
+      <div class="container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+          <div class="col-1">
+            <img src="./assets/images/product-1.jpg" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/product-2.jpg" />
+            <h4>HRX Sports Shoes</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$75.00</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/product-3.jpg" />
+            <h4>HRX Gray Trackpants</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>$45.00</p>
+          </div>
+          <div class="col-1">
+            <img src="./assets/images/product-4.jpg" />
+            <h4>Blue-printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$55.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- -------- HOT DEAL ---------- -->
+      <div class="offer">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/images/exclusive.png" class="offer-img" />
+            </div>
+            <div class="col-3">
+              <h3>Exclusively available on FlexWear</h3>
+              <h1>Smart Band 4</h1>
+              <p
+                >The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3)
+                AMOLED color full-touch display with adjustable brightness, so
+                everything is clear as can be. Enjoy crystal-clear visuals and
+                seamless interaction on the vibrant screen. Adjust the
+                brightness to your liking for optimal viewing in any lighting
+                condition.
+            </p>
+              <button class="btn">Buy Now &#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------- TESTIMONIALS ---------- -->
+      <div class="testimonial">
+        <div class="container">
+        <h2 class="title">Customer Reviews</h2>
+          <div class="row">
+            <div class="col-2">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                Absolutely in love with the latest additions to my wardrobe from
+                this store! The clothes are not only stylish but also incredibly
+                comfortable. The attention to detail in the design is evident,
+                and I've received numerous compliments.!
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <img src="./assets/images/user-1.png" />
+              <h3>Sean Parker</h3>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                I recently purchased a pair of HRX running shoes, and I am
+                beyond impressed! The comfort and support they provide during my
+                workouts are unparalleled. Plus, the stylish design adds an
+                extra boost of motivation. Highly recommend!
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <img src="./assets/images/user-2.png" />
+              <h3>Mike Smith</h3>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>
+                Shopping for clothes online can be tricky, but this website
+                exceeded my expectations. The sizing is accurate, and the
+                materials used are of high quality. The diverse range of styles
+                makes it easy to find something for every occasion. I'll be a
+                repeat customer for sure!
+              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <img src="./assets/images/user-3.png" />
+              <h3>Mable Joe</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our products</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online store</h4>
+                    <ul>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Watches</a></li>
+                     
+                    </ul>
+                </div>
+                <div class="footer-col" id="follow">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
  
