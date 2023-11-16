@@ -40,7 +40,7 @@ FlexWear is an online platform that specializes in sports wear, offering a wide 
 
 ## Getting Started
 
-To explore the world of FlexWear, simply visit our website at [www.flexwear.com](https://www.flexwear.com). Create an account to unlock personalized recommendations, track your orders, and stay updated on the latest arrivals.
+To explore the world of FlexWear, simply visit our website at [www.flexwear.com](https://hsimransidhu.github.io/flex-wear-website/). Create an account to unlock personalized recommendations, track your orders, and stay updated on the latest arrivals.
 
 ## Contributing
 
