@@ -47,5 +47,5 @@ function togglePasswordVisibility() {
 
 // Open detail page
 onEvent('click', productDetail, () => {
-    window.location.href = '';
+    window.location.href = './detail.html';
 })
