@@ -14,11 +14,10 @@ function getElement(selector, parent = document) {
   }
 
 // Selections
-const menuIcon = document.querySelector(".menu-icon");
-const navbar = document.querySelector(".navbar");
 const productDetail = getElement('product-1');
+let MenuItems = getElement("MenuItems");
 
-let MenuItems = document.getElementById("MenuItems");
+// Main Code
 MenuItems.style.maxHeight = "0px";
 
 function menutoggle() {
@@ -35,17 +34,17 @@ function openModal() {
         // Hide the menu when opening the modal on smaller screens
         MenuItems.style.maxHeight = "0px";
     
-        document.getElementById('loginModal').style.display = 'flex';
+        getElement('loginModal').style.display = 'flex';
     }
-    document.getElementById('loginModal').style.display = 'flex';
+    getElement('loginModal').style.display = 'flex';
 }
 
 function closeModal() {
-  document.getElementById("loginModal").style.display = "none";
+  getElement("loginModal").style.display = "none";
 }
 
 function login() {
-    document.getElementById('loginModal').style.display = 'none';
+    getElement('loginModal').style.display = 'none';
 }
 
 // Open detail page
