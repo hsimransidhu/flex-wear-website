@@ -241,6 +241,10 @@ body {
     transform: translateX(-50%)
 }
 
+.style-background .ideas {
+    padding-left: 10px;
+}
+
 .style-background .column {
     flex-basis: 25%;
     padding: 10px;
@@ -268,7 +272,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    margin: 50px 10px 15px 10px;
+    margin: 20px 10px 15px 10px;
 }
 
 .row-2 p {
@@ -518,12 +522,16 @@ h4 {
     }
 }
 
+/* responsiveness for images*/
 @media screen and (max-width: 600px) {  
     .row {
         text-align: center;
     }
     .column {
         flex-basis: 100%;
+    }
+    .heading {
+        font-size: 25px;
     }
     .single-product .row{
         text-align: left;
