@@ -104,15 +104,15 @@ header {
   }
   
    
-  /* Additional styles for the form */
-  .modal-content form {
+/* Additional styles for the form */
+.modal-content form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .modal-content label {
+.modal-content label {
     margin-bottom: 8px;
-  }
+}
   
   .modal-content input {
     padding: 8px;
@@ -148,6 +148,10 @@ header {
 
 .single-product {
     margin-top: 80px;
+}
+
+.single-product .column .p {
+    color: #000;
 }
 
 .row { 
@@ -204,7 +208,7 @@ header {
 .single-product select {
     display: block;
     padding: 10px;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .single-product input {
