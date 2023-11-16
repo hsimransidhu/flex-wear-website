@@ -195,6 +195,10 @@ h4 {
     padding: 30px 0;
 }
 
+.photo {
+  text-align: center;
+}
+
 .offer-img {
     max-width: 100%;
     height: auto;
@@ -237,16 +241,22 @@ p {
     padding-top: 40px;
 }
 
+.review {
+  gap: 20px;
+}
+
 .testimonial .col-2 {
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-    height: 370px;
-    margin-top: 40px;
-    background-color: #fafafa;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+  /* height: 370px; */
+  max-width: 300px;
+  margin-top: 40px;
+  flex-basis: 33%;
+  background-color: #fafafa;
 }
 
 .testimonial .col-2 img {
@@ -265,9 +275,9 @@ p {
 }
 
 .col-2 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
+  font-size: 14px;
+  margin: 12px 0;
+  color: #777;
 }
 
 .testimonial .col-2 h3 {
@@ -279,50 +289,49 @@ p {
 
 /*--Footer--*/
 .footer {
-    background-color: #bfbfbf;
-    padding: 70px 0;
-    margin-top: 70px;
+  background-color: #e3e3e3;
+  padding: 70px 0;
+  margin-top: 70px;
 }
 
 .footercol {
-    width: 25%;
-    padding: 0 15px;
-
+  width: 25%;
+  padding: 0 15px;
 }
 
 .rowf {
-    display: flex;
+  display: flex;
 }
 
 .footercol h4 {
-    font-size: 18px;
-    color: #080808;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
+  font-size: 18px;
+  color: #080808;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
 
 .footercol h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #361ee9;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #006fbf;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
 
 .footercol ul li:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footercol ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
     list-style: none;
     font-weight: 300;
     color: #181818;
@@ -478,14 +487,16 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 30px;
-    }
+  .hero-text h1 {
+    font-size: 30px;
+    padding: 0 10px;
+  }
 
-    .hero-text p {
-        font-size: 16px;
-    }
-
+  .hero-text p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  
     .hero-btn {
         padding: 7px 17px;
         border-radius: 20px;
@@ -534,13 +545,19 @@ p {
     }
 }
 
+@media screen and (max-width: 768px) {
+  .col-2 p {
+    font-size: 13px;
+  }
+}
+
 @media screen and (max-width: 480px) {
     .col-3 {
         flex-basis: 100%;
     }
 
-    .col-2 {
-        flex-basis: calc(100% - 60px);
+    .col-2 p {
+      font-size: 12px;
     }
 }
 

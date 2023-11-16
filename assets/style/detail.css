@@ -62,8 +62,8 @@ header {
     display: none;
 }
 
+ 
 /*--Login--*/
-
 .modal {
     display: none;
     position: fixed;
@@ -76,7 +76,7 @@ header {
     align-items: center;
     z-index: 1;
 }
-
+ 
 .logintext,
 .username,
 .password {
@@ -87,7 +87,7 @@ header {
 .password {
     text-align: left;
 }
-
+ 
 .modal-content {
     background: #fff;
     border-radius: 8px;
@@ -96,8 +96,7 @@ header {
     width: 300px;
     margin: 0 auto;
     position: relative;
-    text-align: center;
-
+    text-align: center;     
 }
 
 .close-btn {
@@ -107,8 +106,7 @@ header {
     cursor: pointer;
     color: #0c0c0c;
 }
-
-
+ 
 /* Additional styles for the form */
 .modal-content form {
     display: flex;
@@ -118,14 +116,14 @@ header {
 .modal-content label {
     margin-bottom: 8px;
 }
-
+ 
 .modal-content input {
     padding: 8px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+ 
 .modal-content button {
     background-color: #006fbf;
     color: #fff;
@@ -136,9 +134,9 @@ header {
 }
 
 .modal-content button:hover {
-    background-color: #006fbf;
-}
-
+    background-color:#006fbf;
+  }
+  
 /*-------- Single product -----------*/
 .small-container {
     max-width: 1080px;
@@ -175,7 +173,7 @@ header {
 .column h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .column .rating {
@@ -213,7 +211,6 @@ header {
 .single-product select {
     display: block;
     padding: 10px;
-    margin-top: 20px;
 }
 
 .single-product input {
@@ -279,7 +276,6 @@ header {
 }
 
 .buy {
-    /* background-color: #ff9f00; */
     background-color: #ffd814;
     color: #000;
 }
@@ -347,7 +343,6 @@ header {
 }
 
 /* Related Products */
-
 .row-2 {
     display: flex;
     justify-content: space-between;
@@ -387,18 +382,16 @@ h4 {
     font-size: 16px;
 }
 
-
 /*--Footer--*/
 .footer {
-    background-color: #bfbfbf;
+    background-color: #e3e3e3;
     padding: 70px 0;
     margin-top: 70px;
 }
 
 .footercol {
     width: 25%;
-    padding: 0 15px;
-
+    padding: 0 15px; 
 }
 
 .rowf {
@@ -419,7 +412,7 @@ h4 {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #361ee9;
+    background-color: #006fbf;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -531,10 +524,8 @@ h4 {
     color: #555;
     font-weight: 500;
 }
-
-
+ 
 @media screen and (max-width: 768px) {
-
     .hero-text p {
         max-width: 80%;
     }
@@ -545,8 +536,8 @@ h4 {
     .row {
         text-align: center;
     }
-
-    .column {
+ 
+    .single-product .column {
         flex-basis: 100%;
     }
 
@@ -569,7 +560,7 @@ h4 {
 }
 
 @media only screen and (max-width: 800px) {
-
+ 
     nav ul {
         position: absolute;
         top: 70px;
@@ -600,4 +591,16 @@ h4 {
         display: block;
         cursor: pointer;
     }
+ 
+@media screen and (max-width: 480px) {
+    .btn {
+        display: inline-block;
+        padding: 6px 20px;
+        margin: 20px 0;
+    }
+    .style .column {
+        flex-basis: 60%;
+    }
 }
+}
+ 
