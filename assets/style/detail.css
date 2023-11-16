@@ -268,7 +268,6 @@ header {
 }
 
 .buy {
-    /* background-color: #ff9f00; */
     background-color: #ffd814;
     color: #000;
 }
@@ -336,7 +335,6 @@ header {
 }
 
 /* Related Products */
-
 .row-2 {
     display: flex;
     justify-content: space-between;
@@ -582,8 +580,8 @@ h4 {
         padding: 6px 20px;
         margin: 20px 0;
     }
-    .style-background .column {
-        flex-basis: 50%;
+    .style .column {
+        flex-basis: 60%;
     }
 }
 

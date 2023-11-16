@@ -238,6 +238,10 @@ p {
   padding-top: 40px;
 }
 
+.review {
+  gap: 20px;
+}
+
 .testimonial .col-2 {
   text-align: center;
   padding: 40px 20px;
@@ -245,8 +249,10 @@ p {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
-  height: 370px;
+  /* height: 370px; */
+  max-width: 300px;
   margin-top: 40px;
+  flex-basis: 33%;
   background-color: #fafafa;
 }
 
