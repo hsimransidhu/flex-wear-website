@@ -164,7 +164,7 @@ header {
 .column h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .column .rating {
@@ -377,7 +377,7 @@ h4 {
 
 /*--Footer--*/
 .footer {
-    background-color: #bfbfbf;
+    background-color: #e3e3e3;
     padding: 70px 0;
     margin-top: 70px;
 }
@@ -405,7 +405,7 @@ h4 {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #361ee9;
+    background-color: #006fbf;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -519,70 +519,6 @@ h4 {
  
 
 @media screen and (max-width: 768px) {
-    /* .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #051129;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-        opacity: 1;
-        animation: none;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: #fff;
-    }
-
-    .menu-icon:hover {
-        color: #0ef;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #051129;
-    }
-
-    .navbar a {
-        margin: 10px 0;
-        opacity: 1;
-        animation: none;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 30px;
-        color: #fff;
-    }
-
-    .menu-icon:hover {
-        color: #0ef;
-    } */
-
     .hero-text p {
         max-width: 80%;
     }
@@ -593,7 +529,7 @@ h4 {
     .row {
         text-align: center;
     }
-    .column {
+    .single-product .column {
         flex-basis: 100%;
     }
     .heading {
@@ -611,7 +547,7 @@ h4 {
     }
 }
 
-@media only  screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   
     nav ul {
         position: absolute;
@@ -637,6 +573,17 @@ h4 {
     .menu-icon {
         display: block;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        display: inline-block;
+        padding: 6px 20px;
+        margin: 20px 0;
+    }
+    .style-background .column {
+        flex-basis: 50%;
     }
 }
 
